@@ -48,19 +48,19 @@ def seed_database():
 
     print("Creating stops...")
     stops = [
-        Stop(stop_name="Central Station", latitude=52.2297, longitude=21.0122),
-        Stop(stop_name="University Square", latitude=52.2398, longitude=21.0129),
-        Stop(stop_name="Market Plaza", latitude=52.2495, longitude=21.0155),
-        Stop(stop_name="Old Town", latitude=52.2489, longitude=21.0129),
-        Stop(stop_name="Business District", latitude=52.2297, longitude=21.0322),
-        Stop(stop_name="East Terminal", latitude=52.1657, longitude=20.9671),
-        Stop(stop_name="West Park", latitude=52.2114, longitude=20.9761),
-        Stop(stop_name="Airport", latitude=52.1657, longitude=20.9671),
-        Stop(stop_name="Shopping Mall", latitude=52.2197, longitude=21.0022),
-        Stop(stop_name="Sports Arena", latitude=52.2397, longitude=21.0422),
-        Stop(stop_name="Hospital", latitude=52.2197, longitude=21.0222),
-        Stop(stop_name="Library", latitude=52.2497, longitude=21.0322),
+        Stop(stop_name="Aleje Zygmunta Krasieńskiego", latitude=50.0571, longitude=19.9262),
+        Stop(stop_name="Siedleckiego Street", latitude=50.0563, longitude=19.9502),
+        Stop(stop_name="Karmelicka Street", latitude=50.0668, longitude=19.9285),
+        Stop(stop_name="Zatorska Street", latitude=50.0426, longitude=19.9376),
+        Stop(stop_name="Wrocławska Street", latitude=50.0783, longitude=19.9241),
+        Stop(stop_name="Aleje Jana Pawła II", latitude=50.0742, longitude=20.0125),
+        Stop(stop_name="Meissnera Street", latitude=50.0717, longitude=19.9820),
+        Stop(stop_name="Wielicka Street", latitude=50.0368, longitude=19.9681),
+        Stop(stop_name="Poselska Street", latitude=50.0583, longitude=19.9358),
+        Stop(stop_name="Plac Mariański", latitude=50.0621, longitude=19.9395),
+        Stop(stop_name="Wita Stwosza Street", latitude=50.0695, longitude=19.9510),
     ]
+
     db.add_all(stops)
     db.commit()
     print(f"Created {len(stops)} stops")
