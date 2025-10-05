@@ -48,19 +48,20 @@ def seed_database():
 
     print("Creating stops...")
     stops = [
-        Stop(stop_name="Central Station", latitude=52.2297, longitude=21.0122),
-        Stop(stop_name="University Square", latitude=52.2398, longitude=21.0129),
-        Stop(stop_name="Market Plaza", latitude=52.2495, longitude=21.0155),
-        Stop(stop_name="Old Town", latitude=52.2489, longitude=21.0129),
-        Stop(stop_name="Business District", latitude=52.2297, longitude=21.0322),
-        Stop(stop_name="East Terminal", latitude=52.1657, longitude=20.9671),
-        Stop(stop_name="West Park", latitude=52.2114, longitude=20.9761),
-        Stop(stop_name="Airport", latitude=52.1657, longitude=20.9671),
-        Stop(stop_name="Shopping Mall", latitude=52.2197, longitude=21.0022),
-        Stop(stop_name="Sports Arena", latitude=52.2397, longitude=21.0422),
-        Stop(stop_name="Hospital", latitude=52.2197, longitude=21.0222),
-        Stop(stop_name="Library", latitude=52.2497, longitude=21.0322),
+        Stop(stop_name="Kraków Główny", latitude=50.0677, longitude=19.9447),  # Main Railway Station
+        Stop(stop_name="Rynek Główny", latitude=50.0619, longitude=19.9369),  # Main Market Square
+        Stop(stop_name="Wawel Castle", latitude=50.0544, longitude=19.9356),  # Wawel Royal Castle
+        Stop(stop_name="Kazimierz", latitude=50.0520, longitude=19.9467),  # Jewish Quarter
+        Stop(stop_name="Nowa Huta", latitude=50.0715, longitude=20.0350),  # Industrial District
+        Stop(stop_name="AGH University", latitude=50.0657, longitude=19.9189),  # AGH University of Science
+        Stop(stop_name="Jagiellonian University", latitude=50.0638, longitude=19.9326),  # Jagiellonian University
+        Stop(stop_name="Kraków Airport", latitude=50.0777, longitude=19.7848),  # Balice Airport
+        Stop(stop_name="Galeria Krakowska", latitude=50.0684, longitude=19.9467),  # Shopping Mall
+        Stop(stop_name="Tauron Arena", latitude=50.0682, longitude=19.9906),  # Sports & Concert Arena
+        Stop(stop_name="University Hospital", latitude=50.0703, longitude=19.9534),  # Hospital
+        Stop(stop_name="Błonia Park", latitude=50.0587, longitude=19.9159),  # Large Park
     ]
+
     db.add_all(stops)
     db.commit()
     print(f"Created {len(stops)} stops")
