@@ -16,7 +16,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",  # T3 app default port
-        "http://localhost:8000"
+        "http://localhost:8000",
+        "https://hackyeah-malopolska-frontend.vercel.app/"
     ],
     allow_credentials=True,
     allow_methods=["*"],
