@@ -48,18 +48,17 @@ def seed_database():
 
     print("Creating stops...")
     stops = [
-        Stop(stop_name="Kraków Główny", latitude=50.0677, longitude=19.9447),  # Main Railway Station
-        Stop(stop_name="Rynek Główny", latitude=50.0619, longitude=19.9369),  # Main Market Square
-        Stop(stop_name="Wawel Castle", latitude=50.0544, longitude=19.9356),  # Wawel Royal Castle
-        Stop(stop_name="Kazimierz", latitude=50.0520, longitude=19.9467),  # Jewish Quarter
-        Stop(stop_name="Nowa Huta", latitude=50.0715, longitude=20.0350),  # Industrial District
-        Stop(stop_name="AGH University", latitude=50.0657, longitude=19.9189),  # AGH University of Science
-        Stop(stop_name="Jagiellonian University", latitude=50.0638, longitude=19.9326),  # Jagiellonian University
-        Stop(stop_name="Kraków Airport", latitude=50.0777, longitude=19.7848),  # Balice Airport
-        Stop(stop_name="Galeria Krakowska", latitude=50.0684, longitude=19.9467),  # Shopping Mall
-        Stop(stop_name="Tauron Arena", latitude=50.0682, longitude=19.9906),  # Sports & Concert Arena
-        Stop(stop_name="University Hospital", latitude=50.0703, longitude=19.9534),  # Hospital
-        Stop(stop_name="Błonia Park", latitude=50.0587, longitude=19.9159),  # Large Park
+        Stop(stop_name="Aleje Zygmunta Krasieńskiego", latitude=50.0571, longitude=19.9262),
+        Stop(stop_name="Siedleckiego Street", latitude=50.0563, longitude=19.9502),
+        Stop(stop_name="Karmelicka Street", latitude=50.0668, longitude=19.9285),
+        Stop(stop_name="Zatorska Street", latitude=50.0426, longitude=19.9376),
+        Stop(stop_name="Wrocławska Street", latitude=50.0783, longitude=19.9241),
+        Stop(stop_name="Aleje Jana Pawła II", latitude=50.0742, longitude=20.0125),
+        Stop(stop_name="Meissnera Street", latitude=50.0717, longitude=19.9820),
+        Stop(stop_name="Wielicka Street", latitude=50.0368, longitude=19.9681),
+        Stop(stop_name="Poselska Street", latitude=50.0583, longitude=19.9358),
+        Stop(stop_name="Plac Mariański", latitude=50.0621, longitude=19.9395),
+        Stop(stop_name="Wita Stwosza Street", latitude=50.0695, longitude=19.9510),
     ]
 
     db.add_all(stops)
